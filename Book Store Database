@@ -1,0 +1,10 @@
+--Create a Book store database
+
+CREATE TABLE books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER );
+
+
+
+INSERT INTO books VALUES (1, "The sweet science", 4000);
+INSERT INTO books VALUES (2, "The boys of summer", 3000);
+INSERT INTO books VALUES (3, "Ball Four", 2000);
+INSERT INTO books VALUES (4, "Friday Night lights",1000);
