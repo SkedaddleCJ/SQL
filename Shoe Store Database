@@ -1,0 +1,51 @@
+--Create a Shoe store database
+
+CREATE TABLE shoes (id INTEGER PRIMARY KEY, Name TEXT, color TEXT, Quantity INTEGER, Aisle INTEGER, Price INTEGER, Gender TEXT);
+
+
+
+INSERT INTO shoes VALUES (1, "Air_Jordon_one", "red", 350, 1, 150, "male");
+
+INSERT INTO shoes VALUES (2, "Chuck_Taylor", "black", 400,2, 80, "male");
+
+INSERT INTO shoes VALUES (3, "AIR_FORCE_ONE", "White", 600, 1, 90, "female");
+
+INSERT INTO shoes VALUES (4, "Jordan_eleven", "grey", 200, 3, 150, "male");
+
+INSERT INTO shoes VALUES (5, "Air_Penny_two", "blue", 150, 4, 220, "male");
+
+INSERT INTO shoes VALUES (6, "Jordan_twelve", "pink", 175, 4, 220, "female");
+
+INSERT INTO shoes VALUES (7, "Kobe_four", "yellow", 100, 8, 200, "male");
+
+INSERT INTO shoes VALUES (8, "Rebook_the_question", "black", 250, 5, 125, "female");
+
+INSERT INTO shoes VALUES (9, "Converse_weapon", "grey",50, 5, 125, "male");
+
+INSERT INTO shoes VALUES (10, "Zoom_Huarachie", "White", 100, 6, 200, "male");
+
+
+INSERT INTO shoes VALUES (11, "Zoom Generations", "Grey", 75, 7, 225, "female");
+
+INSERT INTO shoes VALUES (12, "Jordon three", "purple", 225, 7, 225, "female");
+
+INSERT INTO shoes VALUES (13, "Jordon four", "black", 125, 6, 225, "male");
+
+INSERT INTO shoes VALUES (14, "Pippen two","grey", 25, 8, 250, "male");
+
+INSERT INTO shoes VALUES (15, "Lebron twelve", "yellow", 75, 6,225, "female");
+
+
+
+-- display the price of Shoes sorting by price
+SELECT (price) FROM shoes ORDER BY ("PRICE");
+
+-- How many shoes are in each aisle?
+SELECT Aisle, SUM(quantity) FROM shoes GROUP BY "Aisle";
+
+What is the avg price of Mens shoes in store
+
+SELECT AVG(price) "male" 
+FROM shoes
+
+
